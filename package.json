@@ -1,0 +1,15 @@
+{
+  "name": "artwork-print-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test:render": "node scripts/test-render.js",
+    "register": "node --env-file=.env scripts/register-webhook.js"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.80",
+    "@vercel/functions": "^2.0.0"
+  }
+}
